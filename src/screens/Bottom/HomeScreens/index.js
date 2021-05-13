@@ -1,5 +1,5 @@
 import React, {useRef, useState} from 'react';
-import {Dimensions, Platform, StyleSheet, View} from 'react-native';
+import {Dimensions, Platform, StyleSheet, View, Text} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import Carousel, {Pagination, ParallaxImage} from 'react-native-snap-carousel';
 import {images} from '../../../assets';
@@ -44,7 +44,7 @@ const HomeScreen = () => {
         initialNumToRender={3}
         removeClippedSubviews={false}
       />
-
+      <Text>HUy</Text>
       <Pagination
         dotsLength={DATA.length}
         activeDotIndex={index}
