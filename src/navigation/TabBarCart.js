@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Pressable, Image} from 'react-native';
+import {Image, Pressable, View} from 'react-native';
 import {icons} from '../assets';
 import TabBg from './TabBg';
 const TabBarCart = props => {

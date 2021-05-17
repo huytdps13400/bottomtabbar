@@ -33,19 +33,17 @@ const BottomtabNavigation = () => {
             shadowRadius: 2.22,
           }}>
           <BottomTabBar {...props} />
-          {
-            (Platform.OS = 'ios' && (
-              <View
-                style={{
-                  position: 'absolute',
-                  paddingBottom: Safe.bottom - getSize.v(3),
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  backgroundColor: '#FFFFFF',
-                }}></View>
-            ))
-          }
+          {Platform.OS === 'ios' && (
+            <View
+              style={{
+                position: 'absolute',
+                paddingBottom: Safe.bottom - getSize.v(3),
+                bottom: 0,
+                left: 0,
+                right: 0,
+                backgroundColor: '#FFFFFF',
+              }}></View>
+          )}
         </View>
       )}
       tabBarOptions={{
